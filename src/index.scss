@@ -1,3 +1,15 @@
 body {
   margin: 0;
 }
+
+#health-label {
+  color: white;
+  display: none;
+  font-size: 2rem;
+  position: fixed;
+  z-index: 2;
+
+  &.show {
+    display: block;
+  }
+}
