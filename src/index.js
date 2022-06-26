@@ -1,4 +1,5 @@
 import './index.scss'
 // import './01-simple-scene'
 // import './02-character'
-import './03-floor'
+// import './03-floor'
+import './04-move-character'
