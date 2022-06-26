@@ -6,7 +6,9 @@ body {
   color: white;
   display: none;
   font-size: 2rem;
+  pointer-events: none;
   position: fixed;
+  user-select: none;
   z-index: 2;
 
   &.show {
