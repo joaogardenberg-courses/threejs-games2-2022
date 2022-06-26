@@ -13,6 +13,14 @@ const camera = new THREE.PerspectiveCamera(
   0.1,
   2000
 )
+camera.position.set(0, 0, 5)
+
+const characterGeometry = new THREE.SphereBufferGeometry(2, 32, 32)
+const characterMaterial = new THREE.MeshBasicMaterial({ color: 0xffffff })
+const characterMesh = new THREE.Mesh(characterGeometry, characterMaterial)
+scene.add(characterMesh)
+
+console.log(camera.position, characterMesh.position)
 
 const animate = () => {
   requestAnimationFrame(animate)
